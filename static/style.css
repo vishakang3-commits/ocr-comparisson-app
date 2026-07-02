@@ -1,0 +1,490 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==========================================
+   GLOBAL
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    background:linear-gradient(
+        135deg,
+        #0F172A,
+        #1E3A8A,
+        #2563EB,
+        #38BDF8
+    );
+
+    background-size:400% 400%;
+
+    animation:gradientMove 15s ease infinite;
+
+    color:white;
+
+}
+
+@keyframes gradientMove{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container{
+
+    max-width:1400px;
+
+}
+
+/* ==========================================
+   HEADINGS
+========================================== */
+
+h1{
+
+    font-weight:700;
+
+}
+
+.lead{
+
+    color:#dbeafe;
+
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.card{
+
+    background:rgba(255,255,255,.10);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:20px;
+
+    color:white;
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+.card-header{
+
+    border-radius:20px 20px 0 0 !important;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   UPLOAD CARD
+========================================== */
+
+.upload-card{
+
+    border:2px dashed rgba(255,255,255,.25);
+
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn{
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-primary{
+
+    background:linear-gradient(45deg,#0078D4,#38BDF8);
+
+    border:none;
+
+}
+
+.btn-primary:hover{
+
+    transform:scale(1.03);
+
+    box-shadow:0 0 25px rgba(56,189,248,.5);
+
+}
+
+.btn-success:hover{
+
+    transform:scale(1.03);
+
+}
+
+.btn-outline-light:hover{
+
+    color:black;
+
+}
+
+.btn-outline-info:hover{
+
+    color:white;
+
+}
+
+/* ==========================================
+   FILE INPUT
+========================================== */
+
+.form-control{
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    border:2px dashed #38BDF8;
+
+    padding:15px;
+
+    border-radius:15px;
+
+}
+
+.form-control:focus{
+
+    box-shadow:none;
+
+    border-color:#00BFFF;
+
+}
+
+.form-control::file-selector-button{
+
+    background:#0078D4;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+/* ==========================================
+   IMAGE PREVIEW
+========================================== */
+
+#preview{
+
+    margin-top:20px;
+
+    border-radius:15px;
+
+    border:4px solid white;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+}
+
+/* ==========================================
+   STATS
+========================================== */
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+    margin-bottom:20px;
+
+}
+
+.stats div{
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:15px;
+
+    padding:18px;
+
+    text-align:center;
+
+}
+
+.stats span{
+
+    color:#cbd5e1;
+
+    font-size:14px;
+
+}
+
+.stats h3{
+
+    margin-top:10px;
+
+    color:#38BDF8;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+   OCR TEXT
+========================================== */
+
+pre{
+
+    background:#020617;
+
+    color:#22C55E;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    min-height:320px;
+
+    max-height:420px;
+
+    overflow:auto;
+
+    white-space:pre-wrap;
+
+    word-wrap:break-word;
+
+    font-size:14px;
+
+}
+
+/* ==========================================
+   TABLE
+========================================== */
+
+.table{
+
+    color:white;
+
+}
+
+.table thead{
+
+    background:#2563EB;
+
+}
+
+.table th{
+
+    color:white;
+
+    text-align:center;
+
+}
+
+.table td{
+
+    background:rgba(255,255,255,.05);
+
+    text-align:center;
+
+    vertical-align:middle;
+
+}
+
+/* ==========================================
+   WINNER
+========================================== */
+
+.winner-card{
+
+    border:2px solid gold;
+
+}
+
+#winner{
+
+    color:#FFD700;
+
+    font-size:42px;
+
+    font-weight:700;
+
+    animation:glow 1.5s infinite alternate;
+
+}
+
+@keyframes glow{
+
+    from{
+
+        text-shadow:0 0 8px gold;
+
+    }
+
+    to{
+
+        text-shadow:
+            0 0 20px gold,
+            0 0 35px gold;
+
+    }
+
+}
+
+/* ==========================================
+   DIFFERENCE CARDS
+========================================== */
+
+#characterDifference,
+#wordDifference,
+#timeDifference{
+
+    color:#38BDF8;
+
+    font-weight:700;
+
+    margin-top:15px;
+
+}
+
+/* ==========================================
+   LOADING
+========================================== */
+
+#loading{
+
+    padding:50px;
+
+}
+
+.spinner-border{
+
+    width:4rem;
+
+    height:4rem;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    color:#cbd5e1;
+
+    padding-bottom:40px;
+
+}
+
+footer hr{
+
+    border-color:rgba(255,255,255,.2);
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#38BDF8;
+
+    border-radius:10px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+    .stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    h1{
+
+        font-size:34px;
+
+    }
+
+    .lead{
+
+        font-size:16px;
+
+    }
+
+    pre{
+
+        min-height:220px;
+
+    }
+
+    #winner{
+
+        font-size:28px;
+
+    }
+
+}

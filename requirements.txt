@@ -1,0 +1,7 @@
+Flask
+Flask-Cors
+python-dotenv
+opencv-python
+pytesseract
+Pillow
+requests
